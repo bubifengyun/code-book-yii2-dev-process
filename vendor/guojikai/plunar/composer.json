@@ -1,0 +1,31 @@
+{
+    "name": "guojikai/plunar",
+    "description": "一个PHP版中国阴历转换工具，用于将阳历日期转换为中国阴历日期。(支持 Composer)",
+    "keywords": ["lunar", "date", "laravel"],
+    "license": "MIT",
+		"homepage": "https://github.com/guojikai/plunar",
+    "authors": [
+        {
+            "name": "guojikai",
+            "email": "guojikai@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Plunar\\": "src"
+        }
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
+}
+

@@ -1,0 +1,27 @@
+{
+    "name": "bubifengyun/yii2-webrtc-get-client-local-ip",
+    "description": "using webrtc, get client local ip by javascript in some browser, such as firefox, chrome and opera.",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","ip","webrtc","javascript"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "bubifengyun",
+            "email": "bubifengyun@sina.com"
+        }
+    ],
+    "repositories":[
+        {
+            "type": "git",
+            "url": "https://github.com/bubifengyun/yii2-webrtc-get-client-local-ip.git"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "bubifengyun\\WebrtcGetClientLocalIp\\": ""
+        }
+    }
+}

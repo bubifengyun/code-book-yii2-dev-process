@@ -1,0 +1,15 @@
+https://www.vue-js.com/
+http://www.hubwiz.com/class/566e67417e7d40946afc5ddc
+
+http://www.jianshu.com/p/282682abd9f5
+第一步
+
+将下载好的文件拖到chrome拓展栏中（更多工具=>拓展程序）
+
+
+第二步
+
+#修改配置文件：
+
+win7目录：
+C:\Users\Administrator\AppData\Local\Google\Chrome\User Data\Default\Extensions\nhdogjmejiglipccpnnnanhbledajbpd\3.1.2_0

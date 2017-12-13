@@ -1,0 +1,95 @@
+{
+    "name": "yiisoft/yii2-app-advanced",
+    "description": "Yii 2 Advanced Project Template",
+    "keywords": ["yii2", "framework", "advanced", "project template"],
+    "homepage": "http://www.yiiframework.com/",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/yiisoft/yii2/issues?state=open",
+        "forum": "http://www.yiiframework.com/forum/",
+        "wiki": "http://www.yiiframework.com/wiki/",
+        "irc": "irc://irc.freenode.net/yii",
+        "source": "https://github.com/yiisoft/yii2"
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": ">=2.0.6",
+        "yiisoft/yii2-bootstrap": "*",
+        "yiisoft/yii2-swiftmailer": "*",
+        "dmstr/yii2-adminlte-asset": "2.*",
+        "evgeniyrru/yii2-slick": "*",
+        "himiklab/yii2-easy-thumbnail-image-helper": "*",
+        "moonlandsoft/yii2-phpexcel": "*",
+        "kartik-v/yii2-widget-fileinput": "@dev",
+        "kartik-v/yii2-tree-manager": "@dev",
+        "kartik-v/yii2-grid": "@dev",
+        "mdmsoft/yii2-admin": "~2.0",
+        "kartik-v/yii2-mpdf": "@dev",
+        "kucha/ueditor": "*",
+        "kartik-v/yii2-widget-datetimepicker": "*",
+        "kartik-v/yii2-widget-datepicker": "@dev",
+        "composer-plugin-api": "^1.0",
+        "kartik-v/yii2-widget-depdrop": "@dev",
+        "kartik-v/yii2-widget-select2": "@dev",
+        "kartik-v/yii2-detail-view": "*",
+        "kartik-v/yii2-checkbox-x": "@dev",
+        "yii2tech/crontab": "@dev",
+        "endroid/qrcode": "^1.6",
+        "odaialali/yii2-qrcode-reader": "@dev",
+        "abhi1693/yii2-system-info": "@dev",
+        "kartik-v/yii2-export": "@dev",
+        "kartik-v/yii2-editable": "*",
+        "2amigos/yii2-file-upload-widget": "~1.0",
+        "overtrue/pinyin": "~3.0",
+        "bubifengyun/yii2-webrtc-get-client-local-ip": "@dev",
+        "wbraganca/yii2-videojs-widget": "~1.0",
+        "bupy7/yii2-gridify-view": "dev-master",
+        "kartik-v/yii2-dialog": "*",
+        "cebe/markdown": "~1.0.1",
+        "guojikai/plunar": "^1.1",
+        "kartik-v/yii2-widgets": "@dev",
+        "hisune/echarts-php": "^1.0",
+        "bower-asset/echarts": "*",
+        "bubifengyun/yii2-echarts": "*",
+        "phpoffice/phpword": "v0.13.*",
+        "vlucas/phpdotenv": "^2.0",
+        "budyaga/yii2-cropper": "*",
+        "monitorbacklinks/yii2-wordpress": "dev-master",
+        "e282486518/yii2-console-migration": "*",
+        "iisns/yii2-webuploader": "@dev"
+    },
+    "require-dev": {
+        "codeception/codeception": "*",
+        "yiisoft/yii2-debug": "*",
+        "yiisoft/yii2-gii": "*",
+        "yiisoft/yii2-faker": "*"
+    },
+    "autoload": {
+        "files": [
+            "common/helpers/function.php"
+        ]
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php -r \"file_exists('.env') || copy('.env.example', '.env');@chmod('.env', 0766);\"",
+            "yii\\composer\\Installer::postCreateProject"
+        ],
+        "post-root-package-install" :[
+            "php -r \"file_exists('.env') || copy('.env.example', '.env');@chmod('.env', 0766);\"",
+            "yii\\composer\\Installer::postCreateProject"
+        ]
+    },
+    "config": {
+        "fxp-asset": {
+            "installer-paths": {
+                "npm-asset-library": "vendor/npm",
+                "bower-asset-library": "vendor/bower"
+            }
+        },
+        "process-timeout": 1800
+    },
+    "extra": {
+    }
+}
